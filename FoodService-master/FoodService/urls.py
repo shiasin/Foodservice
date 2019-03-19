@@ -25,6 +25,7 @@ from kitchen import views
 urlpatterns = [
     url('admin/', admin.site.urls),
     url(r'^kitchen/', include('kitchen.urls')),
+    url(r'^customer/', include('customer.urls')),
     url(r'^$', views.index, name='index'),
 ]
 
